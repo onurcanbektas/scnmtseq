@@ -1,0 +1,26 @@
+filesearch_lines_limit: 10000000000
+log_filesize_limit: 2000000000
+sp:
+  bismark/align:
+     fn: "*bismark.txt"
+  bismark/dedup:
+     fn: "*bismark.deduplicated.txt"
+  bismark/meth_extract:
+    fn: "*bismark.deduplicated.splitting.txt"
+  bismark/m_bias:
+    fn: "*bismark.deduplicated.mbias.txt"
+  fastqc/zip:
+    fn: "*trimmed.zip"
+
+fn_ignore_files:
+  - "*NOMe.CpG_report.txt"
+  - "*NOMe.GpC_report.txt"
+
+fn_clean_exts:
+  - ".gz"
+  - ".fastq"
+  - ".bismark.txt"
+  - ".bismark.deduplicated.txt"
+  - ".bismark.deduplicated.splitting.txt"
+  - ".bismark.deduplicated.mbias.txt"
+  - ".txt"
